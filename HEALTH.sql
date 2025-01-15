@@ -19,14 +19,14 @@ DROP TABLE if EXISTS blacklist CASCADE;
 DROP TABLE if EXISTS report CASCADE;
 
 CREATE TABLE user (
-	user_id	INT	NOT NULL,
-	user_email	INT	NOT NULL,
+	user_id	INT NOT NULL,
+	user_email VARCHAR(50) NOT NULL,
 	user_pw	VARCHAR(20)	NOT NULL,
 	user_phone	VARCHAR(20)	NOT NULL,
 	user_name	VARCHAR(20)	NOT NULL,
 	user_gender	CHAR(1)	NOT NULL,
 	user_address	VARCHAR(20)	NOT NULL,
-	user_image	BLOB	NOT NULL,
+	user_image	VARCHAR(1000)	NOT NULL,
 	user_nickname	VARCHAR(20)	NOT NULL,
 	user_height	DECIMAL(5,2)	NOT NULL,
 	user_weight	DECIMAL(5,2)	NOT NULL,
