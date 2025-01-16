@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS user
 
 CREATE TABLE IF NOT EXISTS sticker
 (
-    sticker_id    INT          NOT NULL,
+    sticker_id    INT          NOT NULL AUTO_INCREMENT,
     sticker_size  VARCHAR(255) NOT NULL,
     sticker_color VARCHAR(255) NOT NULL,
     PRIMARY KEY (sticker_id)
@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS wRecord
 
 CREATE TABLE IF NOT EXISTS product
 (
-    product_id         INT          NOT NULL,
+    product_id         INT          NOT NULL AUTO_INCREMENT,
     product_name       VARCHAR(100) NOT NULL,
     product_desc       TEXT(3000)   NOT NULL,
     product_url        VARCHAR(255) NOT NULL,
@@ -179,7 +179,7 @@ CREATE TABLE IF NOT EXISTS studio_booking
 
 CREATE TABLE IF NOT EXISTS blacklist_level
 (
-    level   INT         NOT NULL,
+    level   INT         NOT NULL AUTO_INCREMENT,
     auth    VARCHAR(20) NOT NULL,
     periods DATETIME    NOT NULL,
     PRIMARY KEY (level)
