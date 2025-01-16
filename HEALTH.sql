@@ -90,7 +90,7 @@ CREATE TABLE IF NOT EXISTS place_review
     review_rating     INT          NOT NULL COMMENT '리뷰 별점 (1~5 사이의 값)' CHECK (review_rating between 1 and 5),
     review_created_at DATETIME     NOT NULL DEFAULT (CURRENT_TIME) COMMENT '리뷰 작성 시간',
     review_updated_at DATETIME     NULL COMMENT '리뷰 수정 시간',
-    review_is_blinded BOOLEAN      NOT NULL DEFAULT FALSE COMMENT '리뷰 수정 시간',
+    review_is_blinded BOOLEAN      NOT NULL DEFAULT FALSE COMMENT '리뷰 블라인드 여부',
     wplace_id         INT          NOT NULL,
     user_id           INT          NOT NULL,
     PRIMARY KEY (review_id),
