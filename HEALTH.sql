@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS user
     user_weight   DECIMAL(5, 2) NOT NULL,
     user_join     DATE          NOT NULL,
     user_leave    DATE          NULL,
-    user_report   TINYINT       NOT NULL,
+    user_report   TINYINT       NOT NULL DEFAULT 0,
     user_grant    CHAR(1)       NOT NULL,
     PRIMARY KEY (user_id)
 );
