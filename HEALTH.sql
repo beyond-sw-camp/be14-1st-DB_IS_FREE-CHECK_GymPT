@@ -267,7 +267,7 @@ CREATE TABLE IF NOT EXISTS comment
     comment_is_blinded BOOLEAN      NOT NULL DEFAULT FALSE,
     user_id            INT          NOT NULL,
     post_id            INT          NOT NULL,
-    comment_id2        INT          NOT NULL,
+    comment_id2        INT          NULL,
     PRIMARY KEY (comment_id),
     FOREIGN KEY (user_id) REFERENCES user (user_id),
     FOREIGN KEY (post_id) REFERENCES community_post (post_id),
