@@ -1,28 +1,7 @@
 -- 더미 데이터 만들어서 삽입
-
-/*
-CREATE TABLE user  (
-	user_id       INT           NOT NULL AUTO_INCREMENT,
-    user_email    VARCHAR(50)   NOT NULL,
-    user_pw       VARCHAR(20)   NOT NULL,
-    user_phone    VARCHAR(20)   NOT NULL,
-    user_name     VARCHAR(20)   NOT NULL,
-    user_gender   CHAR(1)       NOT NULL,
-    user_address  VARCHAR(20)   NOT NULL,
-    user_image    VARCHAR(1000) NOT NULL,
-    user_nickname VARCHAR(20)   NOT NULL,
-    user_height   DECIMAL(5, 2) NOT NULL,
-    user_weight   DECIMAL(5, 2) NOT NULL,
-    user_join     DATE          NOT NULL,
-    user_leave    DATE          NULL,
-    user_report   TINYINT       NOT NULL DEFAULT 0,
-    user_grant    CHAR(1)       NOT NULL,
-    PRIMARY KEY (user_id)
-);
-*/
 INSERT
 	 	 INTO user
-	 values
+	 VALUES
 	 (
 	 NULL,
 	 'tjalswhd1@naver.com',
@@ -55,20 +34,40 @@ INSERT
 	 NULL,
 	 10,
 	 'N'
+	 ),(
+	 NULL,
+	 'pigeon@naver.com',
+	 '99999',
+	 '010-9999-9999',
+	 '비둘기',
+	 'F',
+	 '포마토 골목 안',
+	 'URL/pigeon/999',
+	 'Pigeon',
+	 20,
+	 2,
+	 '2025-01-16',
+	 NULL,
+	 3,
+	 'N'
+	 ),(
+	 NULL,
+	 'president@gmail.com',
+	 '12345',
+	 '010-1234-5678',
+	 '윤석열',
+	 'M',
+	 '서울특별시 청와대',
+	 'url/president',
+	 'GyeUm',
+	 175,
+	 90,
+	 '2001-01-01',
+	 '2025-01-15',
+	 100,
+	 'N'
 	 );
 -- ----------------------------------------
-/*
-CREATE TABLE studio (
-	 studio_id      INT            NOT NULL AUTO_INCREMENT,
-    studio_name    VARCHAR(255)   NOT NULL,
-    studio_address TEXT(1000)     NOT NULL,
-    studio_des     TEXT(9000)     NOT NULL,
-    studio_price   DECIMAL(10, 2) NOT NULL,
-    created_at     DATETIME       NOT NULL,
-    updated_at     DATETIME       NULL,
-    PRIMARY KEY (studio_id)
-);
-*/
 INSERT
 		 INTO studio
 	 values
@@ -90,18 +89,6 @@ INSERT
 	 null
 	 );
 -- ----------------------------------------
-/*
-CREATE TABLE studio_booking (
-	 booking_id   INT      NOT NULL AUTO_INCREMENT,
-    booking_date DATE     NOT NULL,
-    start_time   DATETIME NOT NULL,
-    end_time     DATETIME NOT NULL,
-    user_id      INT      NOT NULL,
-    studio_id    INT      NOT NULL,
-    PRIMARY KEY (booking_id),
-    FOREIGN KEY (user_id) REFERENCES user (user_id),
-    FOREIGN KEY (studio_id) REFERENCES studio (studio_id)
-); */
 INSERT
 		 INTO studio_booking
 	 VALUES
@@ -121,14 +108,29 @@ INSERT
 	 2
 	 );
 -- ----------------------------------------
-/*
-CREATE TABLE sticker (
-	 sticker_id    INT          NOT NULL,
-    sticker_size  VARCHAR(255) NOT NULL,
-    sticker_color VARCHAR(255) NOT NULL,
-    PRIMARY KEY (sticker_id)
-);
-*/
+INSERT
+		 into studio_review
+	 values
+	 (
+	 NULL,
+	 '친절한 서비스',
+	 5,
+	 '2025-01-16 14:20:00',
+	 NULL,
+	 FALSE,
+	 1,
+	 1
+	 ),(
+	 NULL,
+	 '여긴 별로에요',
+	 3,
+	 '2025-01-15 13:00:00',
+	 NULL,
+	 FALSE,
+	 2,
+	 2
+	 );
+-- ----------------------------------------
 INSERT
 		 INTO sticker
 	 values
@@ -146,21 +148,6 @@ INSERT
 	 'green'
 	 );
 -- ----------------------------------------
-/* 
-CREATE TABLE diary (
-	 diary_id     INT          NOT NULL AUTO_INCREMENT,
-    date         DATE         NOT NULL,
-    title        VARCHAR(255) NOT NULL,
-    task         VARCHAR(255) NOT NULL,
-    is_completed VARCHAR(255) NOT NULL,
-    color        VARCHAR(255) NOT NULL,
-    user_id      INT          NOT NULL,
-    sticker_id   INT          NULL,
-    PRIMARY KEY (diary_id),
-    FOREIGN KEY (user_id) REFERENCES user (user_id),
-    FOREIGN KEY (sticker_id) REFERENCES sticker (sticker_id)
-);
-*/
 INSERT
 		 INTO diary
 	 values
@@ -178,7 +165,7 @@ INSERT
 	 '2024-12-25',
 	 '즐거운 크리스마스~',
 	 '슬프지만 여친이 없다!',
-	 'Done',
+	 'InProgress',
 	 'green',
 	 1,
 	 NULL
@@ -187,8 +174,251 @@ INSERT
 	 '2025-01-01',
 	 '새해 인사',
 	 '새해복 많이 받으세요~',
-	 'Done',
+	 'NotYet',
 	 'yellow',
 	 2,
 	 null
 	 );
+-- ----------------------------------------
+INSERT
+		 INTO wPlace
+	 values
+	 (
+	 NULL,
+	 '파워헬스장',
+	 '서울시 강남구 역삼동',
+	 '깔끔한 인테리어, 친절한 강사',
+	 '2023-09-24 13:30:00',
+	 NULL,
+	 '2023-09-23 12:00:00',
+	 1
+	 ),(
+	 NULL,
+	 '하늘공원',
+	 '서울특별시',
+	 '넓은 공원 좋은 산책길',
+	 '2020-05-05 12:00:00',
+	 NULL,
+	 '2020-05-01 09:00:00',
+	 1
+	 );
+-- ----------------------------------------
+INSERT
+		 INTO place_review
+	 values
+	 (
+	 NULL,
+	 '별로에요',
+	 '직원이 불친절해요',
+	 2,
+	 '25-01-13',
+	 NULL,
+	 FALSE,
+	 1,
+	 1
+	 ),(
+	 NULL,
+	 '좋습니다!',
+	 4,
+	 '25-01-01',
+	 '25-01-03',
+	 FALSE,
+	 2,
+	 2
+	 );
+-- ----------------------------------------
+INSERT
+		 INTO wInfo
+	 values
+	 (
+	 NULL,
+	 '런닝',
+	 '열심히 뛰세요!',
+	 5
+	 ),(
+	 NULL,
+	 '복싱',
+	 '가드는 생명',
+	 5
+	 ),(
+	 NULL,
+	 '헬스',
+	 '봉 무게는 조상님이 들어주나?',
+	 4
+	 );
+-- ----------------------------------------
+INSERT
+		 INTO wRecord
+	 values
+	 (
+	 NULL,
+	 '2025-01-16',
+	 '01:00:00',
+	 150,
+	 '00:06:30',
+	 '14:00:00',
+	 9,
+	 1,
+	 1,
+	 2
+	 ),(
+	 NULL,
+	 '2025-01-15',
+	 '01:30:00',
+	 120,
+	 '00:05:00',
+	 '17:00:00',
+	 7,
+	 2,
+	 2,
+	 1
+	 );
+-- ----------------------------------------
+INSERT
+		 INTO product
+	 values
+	 (
+	 NULL,
+	 '런닝화',
+	 '신고 뛸 수 있는 신발',
+	 'url/runningshoes',
+	 '2025-01-16',
+	 null
+	 ),(
+	 NULL,
+	 '아령',
+	 '무거운 물건',
+	 'url/exerciseTool',
+	 '2025-01-01',
+	 null
+	 ),(
+	 NULL,
+	 '줄넘기',
+	 '줄이 정말 정말 길군요!',
+	 'url/jumpingrope',
+	 '2024-11-11',
+	 null
+	 );
+-- ----------------------------------------
+INSERT
+		 INTO blacklist_level
+	 values
+	 (
+	 1,
+	 '일주일 게시글, 댓글 제한',
+	 '0000-00-07 00:00:00',
+	 ),(
+	 2,
+	 '일주일 접속 제한',
+	 '0000-00-07 00:00:00'
+	 ),(
+	 3,
+	 '한달 접속 제한',
+	 '0000-01-00 00:00:00'
+	 ),(
+	 4,
+	 '영구 탈퇴',
+	 '3000-00-00 00:00:00'
+	 );
+-- ----------------------------------------
+INSERT
+		 INTO blacklist
+	 values
+	 (
+	 4,
+	 '25-01-15',
+	 '26-01-01',
+	 100,
+	 4
+	 );
+-- ----------------------------------------
+INSERT
+		 INTO community_post
+	 values
+	 (
+	 null,
+	 '행복한 하루',
+	 '모두 행복해져요',
+	 '25-01-16 14:45:00',
+	 NULL,
+	 FALSE,
+	 1
+	 ),(
+	 NULL,
+	 '집가고싶다',
+	 '집이 너무 멀어요',
+	 '25-01-03 14:00:00',
+	 NULL,
+	 FALSE,
+	 2
+	 );
+-- ----------------------------------------
+INSERT
+		 INTO comment
+	 values
+	 (
+	 NULL,
+	 '좋은 의견입니다',
+	 '2025-01-16 15:00:00',
+	 NULL,
+	 'Atom',
+	 1,
+	 2
+	 ),(
+	 NULL,
+	 '안녕하세요',
+	 '2025-01-14 13:00:00',
+	 NULL,
+	 'MJay1',
+	 2,
+	 1
+	 );
+-- ----------------------------------------
+/*
+CREATE TABLE IF NOT EXISTS report
+(
+    report_id       INT           NOT NULL AUTO_INCREMENT,
+    user_id         INT           NOT NULL,
+    report_reason   VARCHAR(9000) NOT NULL,
+    report_YN       BOOLEAN       NOT NULL,
+    reported_id     INT           NOT NULL,
+    report_category INT           NOT NULL,
+    post_id         INT           NULL,
+    comment_id      INT           NULL,
+    review_id       INT           NULL COMMENT '운동장소 리뷰 ID',
+    review_id2      INT           NULL COMMENT '스튜디오 리뷰 ID',
+    PRIMARY KEY (report_id),
+    FOREIGN KEY (post_id) REFERENCES community_post (post_id),
+    FOREIGN KEY (comment_id) REFERENCES comment (comment_id),
+    FOREIGN KEY (review_id) REFERENCES place_review (review_id),
+    FOREIGN KEY (review_id2) REFERENCES studio_review (review_id)
+);
+*/
+INSERT
+		 INTO report
+	 values
+	 (
+	 NULL,
+	 1,
+	 '심심해서요(인성...)',
+	 FALSE,
+	 1,
+	 1,
+	 1,
+	 NULL,
+	 NULL,
+	 NULL
+	 ),(
+	 NULL,
+	 2,
+	 '너무 무서운 글이에요',
+	 FALSE,
+	 2,
+	 2,
+	 2,
+	 NULL,
+	 1,
+	 NULL,
+	 NULL
+	 );
+-- ----------------------------------------
