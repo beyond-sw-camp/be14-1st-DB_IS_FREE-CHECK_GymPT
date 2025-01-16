@@ -13,13 +13,13 @@ WHERE user_id = '1';
 -- 탈퇴여부 확인 가능 및, 기능제한 되었다고 판단
 -- <<<#1회원 아이디로 탈퇴한 회원인지 확인하는 구문>>>
 SELECT user_id,
-       name,
+       user_name, -- 컬럼명 수정
        CASE
            WHEN user_leave IS NOT NULL THEN '이 회원은 탈퇴하였습니다.'
            ELSE '정상적으로 기능을 사용할 수 있습니다.'
            END AS 기능상태
 FROM user
-WHERE user_id = '1';
+WHERE user_id = 1; -- user_id가 INT 형이라 따옴표 제거했습니다.
 
 -- NEW 를 통해 트리거가 실행 된 이후에 갱신된 값 확인
 -- 블랙리스트 레벨이 3이 되었을 경우 회원정보 테이블 user_leave에 현재 일자 저장.
