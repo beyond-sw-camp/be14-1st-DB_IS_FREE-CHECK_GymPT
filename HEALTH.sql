@@ -1,4 +1,4 @@
-DROP TABLE if EXISTS user CASCADE;
+/* DROP TABLE if EXISTS user CASCADE;
 DROP TABLE if EXISTS studio_booking CASCADE;
 DROP TABLE if EXISTS product CASCADE;
 DROP TABLE if EXISTS studio CASCADE;
@@ -16,10 +16,11 @@ DROP TABLE if EXISTS post_bookmark CASCADE;
 DROP TABLE if EXISTS workout_prod CASCADE;
 DROP TABLE if EXISTS blacklist_level CASCADE;
 DROP TABLE if EXISTS blacklist CASCADE;
-DROP TABLE if EXISTS report CASCADE;
+DROP TABLE if EXISTS report CASCADE; */
 
-CREATE TABLE user (
-	user_id	INT NOT NULL,
+
+CREATE TABLE user  (
+	user_id	INT NOT NULL AUTO_INCREMENT ,
 	user_email VARCHAR(50) NOT NULL,
 	user_pw	VARCHAR(20)	NOT NULL,
 	user_phone	VARCHAR(20)	NOT NULL,
@@ -33,50 +34,55 @@ CREATE TABLE user (
 	user_join	DATE	NOT NULL,
 	user_leave	DATE	NULL,
 	user_report	TINYINT	NOT NULL,
-	user_grant	CHAR(1)	NOT NULL
+	user_grant	CHAR(1)	NOT NULL,
+	PRIMARY KEY (user_id)
 );
 
 CREATE TABLE studio_booking (
-	booking_id	INT	NOT NULL,
+	booking_id	INT 		NOT NULL AUTO_INCREMENT ,
 	booking_date	DATE	NOT NULL,
 	start_time	DATETIME	NOT NULL,
 	end_time	DATETIME	NOT NULL,
 	user_id	INT	NOT NULL,
-	studio_id	INT	NOT NULL
+	studio_id	INT	NOT NULL,
+	PRIMARY KEY (booking_id)
 );
 
 CREATE TABLE product (
-	product_id	INT	NOT NULL,
+	product_id	INT	NOT NULL ,
 	product_name	VARCHAR(100)	NOT NULL,
 	product_desc	TEXT(3000)	NOT NULL,
 	product_url	VARCHAR(255)	NOT NULL,
 	product_created_at	DATETIME	NOT NULL,
-	product_updated_at	DATETIME	NULL
+	product_updated_at	DATETIME	NULL,
+	PRIMARY KEY (product_id)
 );
 
 CREATE TABLE studio (
-	studio_id	INT	NOT NULL,
+	studio_id	INT	NOT NULL AUTO_INCREMENT ,
 	studio_name	VARCHAR(255)	NOT NULL,
 	studio_address	TEXT(1000)	NOT NULL,
 	studio_des	TEXT(9000)	NOT NULL,
 	studio_price	DECIMAL(10, 2)	NOT NULL,
 	created_at	DATETIME	NOT NULL,
-	updated_at	DATETIME	NULL 
+	updated_at	DATETIME	NULL,
+	PRIMARY KEY (studio_id)
 );
 
 CREATE TABLE wPlace (
-	wplace_id	INT	NOT NULL,
+	wplace_id	INT	NOT NULL AUTO_INCREMENT ,
 	wplace_name	VARCHAR(100)	NOT NULL,
 	wpalce_adress	VARCHAR(255)	NOT NULL,
 	wplace_des	TEXT(3000)	NOT NULL,
 	wcreate_at	DATETIME	NOT NULL,
 	wupdate_at	DATETIME	NULL,
 	wplace_request	DATETIME	NOT NULL,
-	user_id	INT	NOT NULL
+	user_id	INT	NOT NULL,
+	PRIMARY KEY (wplace_id)
 );
 
 CREATE TABLE place_review (
-	review_id	INT	NOT NULL	COMMENT '리뷰 ID',
+	review_id	INT	NOT NULL	AUTO_INCREMENT COMMENT '리뷰 ID',
 	review_title	VARCHAR(100)	NOT NULL	COMMENT '- 리뷰 제목',
 	review_content	TEXT(3000)	NOT NULL	COMMENT '- 리뷰 내용',
 	review_rating	INT	NOT NULL	COMMENT '- 리뷰 별점 (1~5 사이의 값)',
@@ -84,33 +90,36 @@ CREATE TABLE place_review (
 	review_updated_at	DATETIME	NULL	COMMENT '- 리뷰 수정 시간',
 	review_is_blinded	BOOLEAN	NOT NULL	DEFAULT FALSE	COMMENT '- 리뷰 수정 시간',
 	wplace_id	INT	NOT NULL,
-	user_id	INT	NOT NULL
+	user_id	INT	NOT NULL,
+	PRIMARY KEY (review_id)
 );
 
 CREATE TABLE studio_review (
-	review_id	INT	NOT NULL,
+	review_id	INT	NOT NULL AUTO_INCREMENT ,
 	review_content	TEXT(9000)	NOT NULL,
 	review_rating	INT	NOT NULL,
 	review_created_at	DATETIME	NOT NULL,
 	review_updated_at	DATETIME	NULL,
 	review_is_blinded	BOOLEAN	NOT NULL,
 	user_id	INT	NOT NULL,
-	studio_id	INT	NOT NULL
+	studio_id	INT	NOT NULL,
+	PRIMARY KEY (review_id)
 );
 
 CREATE TABLE diary (
-	diary_id	INT	NOT NULL,
+	diary_id	INT	NOT NULL AUTO_INCREMENT ,
 	date	DATE	NOT NULL,
 	title	VARCHAR(255)	NOT NULL,
 	task	VARCHAR(255)	NOT NULL,
 	is_completed	VARCHAR(255)	NOT NULL,
 	color	VARCHAR(255)	NOT NULL,
 	user_id	INT	NOT NULL,
-	sticker_id	INT	NOT NULL
+	sticker_id	INT	NOT NULL,
+	PRIMARY KEY (diary_id)
 );
 
 CREATE TABLE comment (
-	comment_id	INT	NOT NULL,
+	comment_id	INT	NOT NULL AUTO_INCREMENT ,
 	comment_title	VARCHAR(300)	NOT NULL,
 	comment_create_at	DATETIME	NOT NULL,
 	comment_delete_at	DATETIME	NULL,
@@ -118,17 +127,19 @@ CREATE TABLE comment (
 	comment_is_blinded	BOOLEAN	NOT NULL,
 	user_id	INT	NOT NULL,
 	post_id	INT	NOT NULL,
-	comment_id2	INT	NOT NULL
+	comment_id2	INT	NOT NULL,
+	PRIMARY KEY (comment_id)
 );
 
 CREATE TABLE sticker (
-	sticker_id	INT	NOT NULL,
+	sticker_id	INT	NOT NULL ,
 	sticker_size	VARCHAR(255)	NOT NULL,
-	sticker_color	VARCHAR(255)	NOT NULL
+	sticker_color	VARCHAR(255)	NOT NULL,
+	PRIMARY KEY (sticker_id)
 );
 
 CREATE TABLE wRecord (
-	wrecord_id	INT	NOT NULL,
+	wrecord_id	INT	NOT NULL AUTO_INCREMENT ,
 	wrecord_date	DATE	NOT NULL,
 	wrecord_min	TIME	NOT NULL,
 	wrecord_cal	INT	NOT NULL,
@@ -137,17 +148,19 @@ CREATE TABLE wRecord (
 	wrecord_intensity	INT	NOT NULL,
 	user_id	INT	NOT NULL,
 	workout_id	INT	NOT NULL,
-	wplace_id	INT	NOT NULL
+	wplace_id	INT	NOT NULL,
+	PRIMARY KEY (wrecord_id)
 );
 
 CREATE TABLE community_post (
-	post_id	INT	NOT NULL,
+	post_id	INT	NOT NULL AUTO_INCREMENT ,
 	post_title	VARCHAR(100)	NOT NULL,
 	post_content	VARCHAR(6000)	NOT NULL,
 	post_created_at	DATETIME	NOT NULL,
 	post_updated_at	DATETIME	NULL,
 	post_is_blinded	BOOLEAN	NOT NULL,
-	user_id	INT	NOT NULL
+	user_id	INT	NOT NULL,
+	PRIMARY KEY (post_id)
 );
 
 CREATE TABLE post_like (
@@ -156,10 +169,11 @@ CREATE TABLE post_like (
 );
 
 CREATE TABLE wInfo (
-	winfo_id	INT	NOT NULL,
+	winfo_id	INT	NOT NULL AUTO_INCREMENT,
 	winfo_name	VARCHAR(100)	NOT NULL,
 	winfo_rule	TEXT(9000)	NOT NULL,
-	winfo_intensity	INT	NOT NULL
+	winfo_intensity	INT	NOT NULL,
+	PRIMARY KEY (winfo_id)
 );
 
 CREATE TABLE post_bookmark (
@@ -172,10 +186,11 @@ CREATE TABLE workout_prod (
 	product_id	INT	NOT NULL
 );
 
-CREATE TABLE blacklist_level (
-	level	INT	NOT NULL,
+CREATE TABLE blacklist_level (	
+	level	INT	NOT NULL ,
 	auth	VARCHAR(20)	NOT NULL,
-	period	DATETIME	NOT NULL
+	period	DATETIME	NOT NULL,
+	PRIMARY KEY (level)
 );
 
 CREATE TABLE blacklist (
@@ -187,7 +202,7 @@ CREATE TABLE blacklist (
 );
 
 CREATE TABLE report (
-	report_id	INT	NOT NULL,
+	report_id	INT	NOT NULL AUTO_INCREMENT ,
 	user_id	INT	NOT NULL,
 	report_reason	VARCHAR(9000)	NOT NULL,
 	report_YN	BOOLEAN	NOT NULL,
@@ -196,13 +211,17 @@ CREATE TABLE report (
 	post_id	INT	NULL,
 	comment_id	INT	NULL,
 	review_id	INT	NULL	COMMENT '리뷰 ID',
-	review_id2	INT	NULL
+	review_id2	INT	NULL,
+	PRIMARY KEY (report_id)
+	FOREIGN KEY (review_id)
+	REFERENCES 
 );
 
-ALTER TABLE user ADD CONSTRAINT PK_USER PRIMARY KEY (
-	user_id
-);
+/* ALTER TABLE USER  ADD CONSTRAINT PK_USER PRIMARY KEY (
+	user_id 
+); */
 
+/*
 ALTER TABLE studio_booking ADD CONSTRAINT PK_STUDIO_BOOKING PRIMARY KEY (
 	booking_id
 );
@@ -319,11 +338,11 @@ ALTER TABLE workout_prod ADD CONSTRAINT FK_product_TO_workout_prod_1 FOREIGN KEY
 REFERENCES product (
 	product_id
 );
-
+healthdb
 ALTER TABLE blacklist ADD CONSTRAINT FK_user_TO_blacklist_1 FOREIGN KEY (
 	user_id
 )
 REFERENCES user (
 	user_id
 );
-
+*/
