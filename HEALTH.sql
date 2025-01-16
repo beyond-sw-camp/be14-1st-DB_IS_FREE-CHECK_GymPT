@@ -55,7 +55,7 @@ CREATE TABLE IF NOT EXISTS diary
     is_completed VARCHAR(255) NOT NULL,
     color        VARCHAR(255) NOT NULL,
     user_id      INT          NOT NULL,
-    sticker_id   INT          NOT NULL,
+    sticker_id   INT          NULL,
     PRIMARY KEY (diary_id),
     FOREIGN KEY (user_id) REFERENCES user (user_id),
     FOREIGN KEY (sticker_id) REFERENCES sticker (sticker_id)
