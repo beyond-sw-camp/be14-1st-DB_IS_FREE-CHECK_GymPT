@@ -1,12 +1,16 @@
-UPDATE `user`
+UPDATE user
 SET
-    `user_email` = CASE WHEN ? IS NOT NULL THEN ? ELSE `user_email` END,
-    `user_phone` = CASE WHEN ? IS NOT NULL THEN ? ELSE `user_phone` END,
-    `user_name` = CASE WHEN ? IS NOT NULL THEN ? ELSE `user_name` END,
-    `user_gender` = CASE WHEN ? IS NOT NULL THEN ? ELSE `user_gender` END,
-    `user_address` = CASE WHEN ? IS NOT NULL THEN ? ELSE `user_address` END,
-    `user_image` = CASE WHEN ? IS NOT NULL THEN ? ELSE `user_image` END,
-    `user_nickname` = CASE WHEN ? IS NOT NULL THEN ? ELSE `user_nickname` END,
-    `user_height` = CASE WHEN ? IS NOT NULL THEN ? ELSE `user_height` END,
-    `user_weight` = CASE WHEN ? IS NOT NULL THEN ? ELSE `user_weight` END
-WHERE `user_id` = 0;
+    user_email = 'new_email@example.com',
+    user_pw = 'new_password',
+    user_phone = '010-1234-5678',
+    user_name = '홍길동',
+    user_gender = 'M',
+    user_address = '서울특별시 강남구',
+    user_image = 'new_image_path.jpg',
+    user_nickname = '길동이',
+    user_height = 180.5,
+    user_weight = 75.0,
+    user_leave = NULL,  -- 탈퇴일이 없을 경우 NULL로 설정
+    user_report = 0,    -- 신고 횟수를 초기화하거나 특정 값으로 설정
+    user_grant = 'A'    -- 권한 등급을 'A'로 설정
+WHERE user_id = 1;      -- 수정할 사용자의 ID
