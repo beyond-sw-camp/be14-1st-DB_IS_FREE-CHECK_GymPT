@@ -374,26 +374,6 @@ INSERT
 	 1
 	 );
 -- ----------------------------------------
-/*
-CREATE TABLE IF NOT EXISTS report
-(
-    report_id       INT           NOT NULL AUTO_INCREMENT,
-    user_id         INT           NOT NULL,
-    report_reason   VARCHAR(9000) NOT NULL,
-    report_YN       BOOLEAN       NOT NULL,
-    reported_id     INT           NOT NULL,
-    report_category INT           NOT NULL,
-    post_id         INT           NULL,
-    comment_id      INT           NULL,
-    review_id       INT           NULL COMMENT '운동장소 리뷰 ID',
-    review_id2      INT           NULL COMMENT '스튜디오 리뷰 ID',
-    PRIMARY KEY (report_id),
-    FOREIGN KEY (post_id) REFERENCES community_post (post_id),
-    FOREIGN KEY (comment_id) REFERENCES comment (comment_id),
-    FOREIGN KEY (review_id) REFERENCES place_review (review_id),
-    FOREIGN KEY (review_id2) REFERENCES studio_review (review_id)
-);
-*/
 INSERT
 		 INTO report
 	 values
