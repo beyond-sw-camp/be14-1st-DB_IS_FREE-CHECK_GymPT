@@ -1,4 +1,5 @@
 -- 더미 데이터 만들어서 삽입
+-- 주석 전부 삭제
 INSERT
 	 	 INTO user
 	 VALUES
