@@ -3,4 +3,4 @@ UPDATE user
 SET
     user_leave = CURDATE()
 WHERE
-    user_id = 0;
+    user_id = 1;
