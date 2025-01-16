@@ -14,6 +14,6 @@ VALUES
      'Done', 'red',1,1
     );
 
-/* is_completed(체크여부) Done, InProgress, ToDo */
+/* is_completed(체크여부) Done, InProgress, dToDo */
 /* 대부분 사이즈 관련은 1~5로 정의*/
 /* 색관련은 소문자로 통일*/
