@@ -39,18 +39,6 @@ WHERE workout_id = 1 -- 개별조회기능$$$목록조회와 별개로 개별조
 ORDER BY wr.wrecord_date DESC;
 -- 각각 운동에 대하여 세부적인 정보를 조회할수 있는 기능 제공.
 -- 사용자가 날짜를 입력하면 과거 운동기록을 조회할 수 있다.
-SELECT wr.wrecord_id
-     , wr.wrecord_date
-     , wr.wrecord_min
-     , wr.wrecord_cal
-     , wr.average_pace
-     , wr.wrecord_at
-     , wr.wrecord_intensity
-     , info.winfo_name
-FROM wRecord wr
-         JOIN wInfo info ON wr.workout_id = info.winfo_id
-WHERE wrecord_id = 3
-ORDER BY wr.wrecord_date DESC;
 
 -- 사용자가 저장된 과거의 기록을 삭제 할 수 있다.
 DELETE
