@@ -1,7 +1,7 @@
 -- 테스트 케이스시 사용할 관리자 권한을 가진 유저는 user_id 5(한석현)
 -- 운동장소 등록 /관리자만
 INSERT INTO wPlace (wplace_name, wplace_address, wplace_des, user_id)
-SELECT '동작 헬스장', '서울특별시 보라매롱', '어딘가', 1
+SELECT '동작 헬스장1', '서울특별시 보라매롱', '어딘가', 1
 FROM user
 WHERE user_id = 5 AND user_grant = 'Y';
 
