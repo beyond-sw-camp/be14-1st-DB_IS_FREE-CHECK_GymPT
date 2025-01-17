@@ -67,6 +67,22 @@ INSERT
 	 '2025-01-15',
 	 100,
 	 'N'
+	 ),(
+	 NULL,
+	 'hancoal@gmail.com',
+	 '77777',
+	 '010-8845-7198',
+	 '한석현',
+	 'M',
+	 '서울특별시 보라매로 87',
+	 'URL/han/coal/rockstar',
+	 'Rock스타',
+	 174,
+	 95,
+	 DEFAULT,
+	 NULL,
+	 0,
+	 'Y'
 	 );
 -- ----------------------------------------
 SELECT * FROM studio;
