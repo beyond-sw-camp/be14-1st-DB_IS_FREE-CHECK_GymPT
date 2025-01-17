@@ -11,7 +11,7 @@ INTO wRecord ( wrecord_date, wrecord_min, wrecord_cal, average_pace, wrecord_at,
 VALUES (CURDATE(), '01:00:00', 150, '00:06:30', '14:00:00', 9, 1, 1, 2);
 
 -- 전체 운동 기록 조회
-SELECT workout_id
+SELECT wr.wrecord_id
      , wr.wrecord_date
      , wr.wrecord_min
      , wr.wrecord_cal
@@ -21,7 +21,7 @@ SELECT workout_id
      , info.winfo_name
 FROM wRecord wr
          JOIN wInfo info ON workout_id = info.winfo_id
-    ORDER BY wr.wrecord_date DESC;
+ORDER BY wr.wrecord_date DESC;
 
 -- 각각 운동에 대하여 세부적인 정보를 조회할수 있는 기능 제공.
 -- 사용자가 날짜를 입력하면 과거 운동기록을 조회할 수 있다.
