@@ -21,7 +21,7 @@ SELECT
     created_at,
     updated_at
 FROM studio
-ORDER BY studio_name DESC; -- 스튜디오는 일단 스튜디오 아이디로 정렬
+ORDER BY studio_name ASC; -- 수정
 
 -- 사용자 스튜디오 예약(스튜디오 2에 사용자 1이 10-12시 타임 예약)
 INSERT INTO studio_booking (booking_date, start_time, end_time, user_id, studio_id)
