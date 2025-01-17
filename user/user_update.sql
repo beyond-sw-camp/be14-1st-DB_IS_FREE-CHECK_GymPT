@@ -12,5 +12,5 @@ SET
     user_weight = 75.0,
     user_leave = NULL,  -- 탈퇴일이 없을 경우 NULL로 설정
     user_report = 0,    -- 신고 횟수를 초기화하거나 특정 값으로 설정
-    user_grant = 'A'    -- 권한 등급을 'A'로 설정
+    user_grant = 'N'
 WHERE user_id = 1;      -- 수정할 사용자의 ID
