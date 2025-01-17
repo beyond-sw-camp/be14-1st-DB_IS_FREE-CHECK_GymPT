@@ -11,16 +11,6 @@ SELECT
         END AS 예약상태;
 -- 기존 예약건을 스튜디오별로 조회하여 예약가능한지 먼저 확인 후(예약->수정->취소->예약현황)기능구현
 
--- 예약 가능한 스튜디오 정보 조회
-SELECT
-    studio_name,
-    studio_address,
-    studio_des,
-    studio_price,
-    created_at,
-    updated_at
-FROM studio
-ORDER BY studio_name ASC; -- 수정
 
 -- 사용자 스튜디오 예약(스튜디오 2에 사용자 1이 10-12시 타임 예약)
 INSERT INTO studio_booking (booking_date, start_time, end_time, user_id, studio_id)
