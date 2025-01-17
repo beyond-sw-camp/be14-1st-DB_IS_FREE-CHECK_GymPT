@@ -13,7 +13,6 @@ SELECT
 
 -- 예약 가능한 스튜디오 정보 조회
 SELECT
-    studio_id,
     studio_name,
     studio_address,
     studio_des,
@@ -43,7 +42,6 @@ WHERE booking_id = 3
 
 -- 본인 예약 현황 조회
 SELECT
-    sb.booking_id,
     sb.booking_date,
     sb.start_time,
     sb.end_time,
