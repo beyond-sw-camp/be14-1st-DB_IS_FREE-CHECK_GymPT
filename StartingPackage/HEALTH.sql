@@ -40,6 +40,16 @@ CREATE TABLE IF NOT EXISTS user
   AUTO_INCREMENT = 1 COMMENT ='회원'
   DEFAULT CHARSET UTF8;
 
+/*
+    <USER 테이블 인덱스>
+        - 유저 테이블의 이메일과 핸드폰 번호는 자주 조회 됨으로 인덱스를 추가함
+        - 데이터가 많아질수록 풀스캔이 일어남
+        - 이메일과 핸드폰 번호는 중복되지 않는다.
+        - 회원조회, 아이디찾기, 비밀번호 찾기 (WHERE절 성능 개선)
+*/
+CREATE INDEX idx_user_email ON user(user_email);
+CREATE INDEX idx_user_phone ON user(user_phone);
+
 CREATE TABLE IF NOT EXISTS sticker
 (
     sticker_id    INT          NOT NULL AUTO_INCREMENT,
@@ -67,6 +77,13 @@ CREATE TABLE IF NOT EXISTS diary
   AUTO_INCREMENT = 1 COMMENT ='다이어리'
   DEFAULT CHARSET UTF8;
 
+/*
+    <DIARY 테이블 인덱스>
+        - 사용자별로 작성한 다이어리를 조회가 빈번함
+        - user_id를 기준으로 다이어리 정보를 검색하거나 필터링할 때 효율적으로 처리
+*/
+CREATE INDEX idx_diary_user_id ON diary(user_id);
+
 CREATE TABLE IF NOT EXISTS wPlace
 (
     wplace_id      INT          NOT NULL AUTO_INCREMENT,
@@ -81,6 +98,15 @@ CREATE TABLE IF NOT EXISTS wPlace
 ) ENGINE = INNODB
   AUTO_INCREMENT = 1 COMMENT ='운동 장소'
   DEFAULT CHARSET UTF8;
+
+/*
+    <PLACE_REVIEW 테이블 인덱스>
+        - wplace_name는 중복을 허용하지 않으므로 검색으로 사용됨
+        - user_id를 기준으로 다이어리 정보를 검색하거나 필터링할 때 효율적으로 처리
+        - 운동장소를 기준으로 검색 (WHERE 절 성능 향상)
+*/
+CREATE INDEX idx_wplace_name ON wPlace(wplace_name);
+CREATE INDEX idx_wplace_user_id ON wPlace(user_id);
 
 CREATE TABLE IF NOT EXISTS place_review
 (
@@ -99,6 +125,15 @@ CREATE TABLE IF NOT EXISTS place_review
 ) ENGINE = INNODB
   AUTO_INCREMENT = 1 COMMENT ='운동장소 리뷰'
   DEFAULT CHARSET UTF8;
+
+/*
+    <PLACE_REVIEW 테이블 인덱스>
+        - 특정 운동 장소에 대한 리뷰를 wplace_id로 빈번히 조회
+        - 장소에 대한 데이터는 자주 수정되지 않는다.
+        - 운동장소에 대한 리뷰에 대해서 사용 (JOIN 절 성능 향상)
+*/
+CREATE INDEX idx_place_review_wplace_id ON place_review(wplace_id);
+CREATE INDEX idx_place_review_user_id ON place_review(user_id);
 
 CREATE TABLE IF NOT EXISTS wInfo
 (
