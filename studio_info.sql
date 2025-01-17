@@ -9,8 +9,7 @@ SELECT studio_name,
            END AS TIME
 -- 등록시간 수정시간에 따라 TIME이라는 이름으로 수정되면 수정시간, 없으면 등록시간 출력
 FROM studio
-ORDER BY studio_name;
--- 스튜디오 이름 기준 최신순으로 조회시켜줌.
+WHERE studio_id = 3;
 
 -- 사용자 키워드 입력에 따른 조회 기능
 SELECT studio_name,
@@ -22,6 +21,5 @@ SELECT studio_name,
            ELSE updated_at
            END AS TIME
 FROM studio
-WHERE studio_name LIKE '%스튜%'
-ORDER BY studio_name;
+WHERE studio_name LIKE '%포마%';
 -- 키워드 입력 조건
