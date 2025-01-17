@@ -21,6 +21,7 @@ SELECT wr.wrecord_id
      , info.winfo_name
 FROM wRecord wr
          JOIN wInfo info ON workout_id = info.winfo_id
+WHERE workout_id = 1 -- 개별조회기능$$$목록조회와 별개로 개별조회
 ORDER BY wr.wrecord_date DESC;
 
 -- 각각 운동에 대하여 세부적인 정보를 조회할수 있는 기능 제공.

@@ -9,7 +9,7 @@ SELECT studio_name,
            END AS TIME
 -- 등록시간 수정시간에 따라 TIME이라는 이름으로 수정되면 수정시간, 없으면 등록시간 출력
 FROM studio
-WHERE studio_id = 1 -- 전체
+WHERE studio_id = 1 -- 개별조회기능$$$목록조회와 별개로 개별조회
 ORDER BY studio_name;
 -- 스튜디오 이름 기준으로 조회시켜줌.
 
