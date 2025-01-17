@@ -8,8 +8,9 @@ SELECT
 		 ELSE review_updated_at
 		 END AS time
   FROM place_review
- WHERE review_title LIKE '%별로%'
-   AND review_is_blinded = false;
+  WHERE review_title LIKE '%별로%'
+  AND review_is_blinded = FALSE
+  ORDER BY review_created_at DESC;
  
 -- 운동 장소 리뷰 조회
 SELECT
