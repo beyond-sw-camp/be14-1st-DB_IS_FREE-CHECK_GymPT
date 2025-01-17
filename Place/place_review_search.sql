@@ -1,4 +1,4 @@
--- 운동 장소 리뷰 조회
+-- 운동 장소 리뷰 키워드 조회
 SELECT
 		 review_title,
 		 review_content,
