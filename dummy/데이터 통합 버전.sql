@@ -1194,4 +1194,5 @@ INSERT INTO report (user_id, report_reason, report_YN, reported_id, report_categ
 (29, '허위 광고', FALSE, 37, 2, NULL, 31, NULL, NULL),
 (37, '부적절한 내용', TRUE, 13, 1, 35, NULL, NULL, NULL);
 
--- ㅇㅇㅇ
+
+
