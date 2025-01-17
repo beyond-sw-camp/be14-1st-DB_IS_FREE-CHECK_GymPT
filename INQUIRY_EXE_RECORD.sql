@@ -35,10 +35,10 @@ SELECT wr.wrecord_id
      , info.winfo_name
 FROM wRecord wr
          JOIN wInfo info ON wr.workout_id = info.winfo_id
-WHERE wrecord_date = '2024-01-01'
+WHERE wrecord_id = 3
 ORDER BY wr.wrecord_date DESC;
 
 -- 사용자가 저장된 과거의 기록을 삭제 할 수 있다.
 DELETE
 FROM wRecord
-WHERE workout_id = 1 AND wrecord_date = '2025-01-01';
+WHERE wrecord_id = 3;
