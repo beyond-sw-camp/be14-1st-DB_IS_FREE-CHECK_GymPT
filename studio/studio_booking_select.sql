@@ -1,5 +1,17 @@
--- 사용자 스튜디오 예약(스튜디오 2에 사용자 1이 10-12시 타임 예약)
-INSERT INTO studio_booking (booking_date, start_time, end_time, user_id, studio_id)
-SELECT '2025-01-18', '2025-01-18 10:00:00', '2025-01-18 12:00:00', 1, 2
-FROM studio
-WHERE studio_id = 2;
+-- 본인 예약 현황 조회
+SELECT
+    sb.booking_date,
+    sb.start_time,
+    sb.end_time,
+    s.studio_name,
+    s.studio_address,
+    s.studio_des,
+    s.studio_price
+FROM
+    studio_booking sb
+        JOIN
+    studio s ON sb.studio_id = s.studio_id
+WHERE
+    sb.user_id = 1
+ORDER BY
+    sb.booking_date ASC, sb.start_time ASC;
