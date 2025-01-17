@@ -38,15 +38,3 @@ SELECT
 FROM place_review
 WHERE review_is_blinded = FALSE AND review_id = 1 -- 개별조회기능$$$목록조회와 별개로 개별조회
 ORDER BY review_created_at DESC;
-
-
-
-
-
-
-
-
-
-
-
-
