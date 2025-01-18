@@ -230,7 +230,7 @@ CREATE TABLE IF NOT EXISTS community_post
     post_content    VARCHAR(6000) NOT NULL,
     post_created_at DATETIME      NOT NULL DEFAULT (CURRENT_TIME),
     post_updated_at DATETIME      NULL,
-    post_is_blinded BOOLEAN       NOT NULL,
+    post_is_blinded BOOLEAN       NOT NULL DEFAULT FALSE,
     user_id         INT           NOT NULL,
     PRIMARY KEY (post_id),
     FOREIGN KEY (user_id) REFERENCES user (user_id)
