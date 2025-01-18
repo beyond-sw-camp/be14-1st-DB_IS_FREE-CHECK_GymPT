@@ -7,7 +7,7 @@ SELECT p.post_id
      , p.user_id
      , COUNT(c.comment_id)
 FROM community_post p
-         JOIN comment c ON c.user_id = p.user_id
+         JOIN comment c ON c.post_id = p.post_id
 WHERE post_is_blinded = 0
   AND c.comment_is_blinded = 0
   AND p.post_title LIKE '%초%'
@@ -22,7 +22,7 @@ SELECT p.post_id
      , p.user_id
      , COUNT(c.comment_id)
 FROM community_post p
-         JOIN comment c ON c.user_id = p.user_id
+         JOIN comment c ON c.post_id = p.post_id
 WHERE post_is_blinded = 0
   AND c.comment_is_blinded = 0
   AND p.post_content LIKE '%런지%'
@@ -37,7 +37,7 @@ SELECT p.post_id
      , p.user_id
      , COUNT(c.comment_id) AS comment_count
 FROM community_post p
-         JOIN comment c ON c.user_id = p.user_id
+         JOIN comment c ON c.post_id = p.post_id
 WHERE post_is_blinded = 0
   AND c.comment_is_blinded = 0
   AND (p.post_title LIKE '%운동%'
