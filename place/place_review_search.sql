@@ -27,7 +27,7 @@ ORDER BY review_created_at DESC;
 
 
 -- 운동 장소 리뷰 개별 조회 (hancoal 수정)
-SELECT w.wplace_name
+SELECT w.wplace_name,
        review_title,
        review_content,
        review_rating,
