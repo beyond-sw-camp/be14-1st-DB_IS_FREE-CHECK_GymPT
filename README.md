@@ -466,7 +466,7 @@ main
   </details>
 
    <details>
-    <summary>두 번째 토글</summary>
+    <summary>신고 및 블랙리스트</summary>
 
 <details>
     <summary>[TEST-060]신고하기</summary>
