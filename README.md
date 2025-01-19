@@ -64,7 +64,7 @@ main
 ├── place -- 운동 장소 관련 기능
 ├── dummy -- 더미 데이터 생성
 ├── diary -- 다어어리 관련 기능
-├── community -- 커뮤니티 관련 기능능
+├── community -- 커뮤니티 관련 기능
 │     ├── post -- 게시글 관련 기능
 │     └── comment -- 댓글 관련 기능
 ├── blacklist -- 블랙리스트 관련 기능
@@ -76,14 +76,14 @@ main
 
 ## 5. WBS
 
- <img src = "">
+ <img src = "https://github.com/user-attachments/assets/4bc1fdd2-f00b-446d-9962-54a750be8507">
 
 <br>
 
 ## 6. 요구사항 명세서
 
 <img src = "https://github.com/user-attachments/assets/edb10cc5-f7c4-462c-a4f2-26dc4d455c84">
-<img src = "https://github.com/user-attachments/assets/ecb71be0-83b3-426a-9804-c46673442856">
+<img src = "https://github.com/user-attachments/assets/8e232b7a-f879-4f81-8eda-7a4b5e2a418e">
 <img src = "https://github.com/user-attachments/assets/4f7abaff-3b25-4708-90cd-05e443671ea3">
 <img src = "https://github.com/user-attachments/assets/e21d78b2-676e-4666-a679-db3c1b2e3286">
 
