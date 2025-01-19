@@ -2,10 +2,6 @@
 
 <img width="1322" alt="Image" src="https://github.com/user-attachments/assets/000f594b-60cf-4343-868a-3dd0cc1c49ae" />
 
-- 배포 URL : https://ohmycode-readme.netlify.app
-- Test ID : readme@test.com
-- Test PW : 123123
-
 <br>
 
 ## 프로젝트 소개
@@ -78,11 +74,23 @@ main
 
 <br>
 
-## 6. WBS
+## 5. WBS
+
+ <img src = "">
 
 <br>
 
-## 7. 요구사항 명세서
+## 6. 요구사항 명세서
+
+<img src = "https://github.com/user-attachments/assets/edb10cc5-f7c4-462c-a4f2-26dc4d455c84">
+<img src = "https://github.com/user-attachments/assets/ecb71be0-83b3-426a-9804-c46673442856">
+<img src = "https://github.com/user-attachments/assets/4f7abaff-3b25-4708-90cd-05e443671ea3">
+<img src = "https://github.com/user-attachments/assets/e21d78b2-676e-4666-a679-db3c1b2e3286">
+
+<br>
+
+## 7. UML
+<img src = "https://github.com/user-attachments/assets/e6219c5a-28b9-4250-abe0-285881341d10">
 
 <br>
 
@@ -115,7 +123,12 @@ main
 
 <details>
     <summary>[TEST-001]회원가입</summary>
-       <img src = "">
+  - 이메일 중복 확인     
+  <img src = "https://github.com/user-attachments/assets/787d7299-5710-4187-8df9-78844750c45b">
+  - 닉네임 중복 확인
+  <img src = "https://github.com/user-attachments/assets/92c15616-2f43-4422-91a3-b128a963fb2c">
+  - 회원 가입
+  <img src = "https://github.com/user-attachments/assets/c7823e6f-addc-4b17-8ecc-64461b916278">
   </details>
 
 <details>
@@ -466,7 +479,7 @@ main
   </details>
 
    <details>
-    <summary>신고 및 블랙리스트</summary>
+    <summary>두 번째 토글</summary>
 
 <details>
     <summary>[TEST-060]신고하기</summary>
