@@ -174,7 +174,90 @@ main
 
   </details>
 
+<details>
+    <summary>커뮤니티</summary>
+       
+<details>
+    <summary>[TEST-011]게시글 등록</summary>
+       <img src = "https://github.com/user-attachments/assets/06987a81-4af2-473a-bd6a-76895ac31d9f">
+  </details>
 
+<details>
+    <summary>[TEST-012]게시글 수정</summary>
+       <img src = "https://github.com/user-attachments/assets/88265c07-9d0d-4695-b64f-ac7e98f4f88f">
+  </details>
+
+<details>
+    <summary>[TEST-013]게시글 삭제</summary>
+       <img src = "https://github.com/user-attachments/assets/78279bc7-8bcb-4125-828a-38553b4b1140">
+  </details>
+
+<details>
+    <summary>[TEST-014]게시글 조회</summary>
+       <img src = "https://github.com/user-attachments/assets/c814e0f8-f5e9-43c5-83e0-5cd2e33f7079">
+  </details>
+
+<details>
+    <summary>[TEST-015]게시글 좋아요</summary>
+       <img src = "https://github.com/user-attachments/assets/e90cdb52-4214-4bfb-b1cc-7d549a7f2712">
+  </details>
+
+<details>
+    <summary>[TEST-016]게시글 좋아요 취소</summary>
+       <img src = "https://github.com/user-attachments/assets/70096e9d-79d7-4fb7-b4c6-bb5e114fa12d">
+  </details>
+
+<details>
+<summary>[TEST-017]게시글 북마크</summary>
+<img src = "https://github.com/user-attachments/assets/7e42a0e8-0233-43d2-b6ab-644a2779513b">
+  </details>
+
+<details>
+<summary>[TEST-018]게시글 북마크 취소</summary>
+<img src = "https://github.com/user-attachments/assets/1eec6ade-bb8b-42da-a84c-420de61efda8">
+  </details>
+
+<details>
+<summary>[TEST-019]게시글 검색</summary>
+<img src = "https://github.com/user-attachments/assets/f6849185-99d8-4ca4-86e1-7ba268e23b7d">
+  </details>
+
+<details>
+<summary>[TEST-020]댓글 작성</summary>
+<img src = "https://github.com/user-attachments/assets/dc81f2d6-5c8d-474c-91ee-af5a93f8e2b8">
+  </details>
+
+<details>
+<summary>[TEST-021]댓글 수정</summary>
+<img src = "https://github.com/user-attachments/assets/c9e614d3-8093-4597-b12b-f0f627ec6fc5">
+  </details>
+
+<details>
+<summary>[TEST-022]댓글 삭제</summary>
+<img src = "https://github.com/user-attachments/assets/ed132f01-8806-4e01-9f00-3f7f13282d61">
+  </details>
+
+<details>
+<summary>[TEST-023]댓글 조회</summary>
+- 전체 댓글 조회
+<img src = "https://github.com/user-attachments/assets/57731881-6b24-4a86-8399-b1ee58849f1f">
+- 게시글 1개 조회시 댓글 ,대댓글 조회
+<img src = "https://github.com/user-attachments/assets/893abc0a-7bb2-47bc-b2e9-bb2b61b6814b">
+  </details>
+
+  </details>
+
+<details>
+    <summary>운동 장소</summary>
+       
+<details>
+    <summary>[TEST-024]운동 장소 등록</summary>
+       <img src = "">
+  </details>
+
+
+
+  </details>
 
  <details>
     <summary>스튜디오</summary>
