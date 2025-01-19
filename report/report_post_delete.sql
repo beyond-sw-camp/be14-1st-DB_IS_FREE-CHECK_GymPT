@@ -2,7 +2,7 @@
 SET FOREIGN_KEY_CHECKS = 0;
 DELETE
 FROM community_post
-WHERE post_id = (SELECT post_id
+WHERE post_id IN (SELECT post_id
                  FROM report
                  WHERE report_YN = TRUE);
 SET FOREIGN_KEY_CHECKS = 1;
@@ -10,7 +10,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 SET FOREIGN_KEY_CHECKS = 0;
 DELETE
 FROM comment
-WHERE comment_id = (SELECT comment_id
+WHERE comment_id IN (SELECT comment_id
                     FROM report
                     WHERE report_YN = TRUE);
 SET FOREIGN_KEY_CHECKS = 1;
@@ -18,7 +18,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 SET FOREIGN_KEY_CHECKS = 0;
 DELETE
 FROM place_review
-WHERE review_id = (SELECT review_id
+WHERE review_id IN (SELECT review_id
                    FROM report
                    WHERE report_YN = TRUE);
 SET FOREIGN_KEY_CHECKS = 1;
@@ -26,7 +26,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 SET FOREIGN_KEY_CHECKS = 0;
 DELETE
 FROM studio_review
-WHERE review_id = (SELECT review_id
+WHERE review_id IN (SELECT review_id
                    FROM report
                    WHERE report_YN = TRUE);
 SET FOREIGN_KEY_CHECKS = 1;
