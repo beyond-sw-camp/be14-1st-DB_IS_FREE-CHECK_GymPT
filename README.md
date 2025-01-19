@@ -304,7 +304,7 @@ main
 
    <details>
     <summary>두 번째 토글</summary>
-    두 번째 토글 내용입니다.
+    두 번째 토글 내용입니다. test
   </details>
 
    <details>
