@@ -150,18 +150,26 @@ main
   </details>
 
 <details>
-<summary>[TEST-006]리뷰 수정</summary>
+<summary>[TEST-007]리뷰 수정</summary>
 <img src = "https://github.com/user-attachments/assets/00129645-214c-4a61-875a-53cbd0a3321b">
   </details>
 
 <details>
-<summary>[TEST-006]리뷰 등록</summary>
-<img src = "">
+<summary>[TEST-008]리뷰 삭제</summary>
+<img src = "https://github.com/user-attachments/assets/f015f7b9-1f6c-4d61-9dd6-0fabcf2e92a9">
   </details>
 
 <details>
-<summary>[TEST-006]리뷰 등록</summary>
-<img src = "">
+<summary>[TEST-009]리뷰 조회</summary>
+- 리뷰 전체 조회
+<img src = "https://github.com/user-attachments/assets/df5d1290-d7fe-4ccf-ad98-850fc1937437">
+- 해당 장소 리뷰 조회
+<img src = "https://github.com/user-attachments/assets/8e06228e-a623-49e0-9da9-4638110a5709">
+  </details>
+
+<details>
+<summary>[TEST-010]리뷰 검색 </summary>
+ <img src = "https://github.com/user-attachments/assets/da4a1997-12be-432e-93a6-cbaffefebf70">
   </details>
 
   </details>
