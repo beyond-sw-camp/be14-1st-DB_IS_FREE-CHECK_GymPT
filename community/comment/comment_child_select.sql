@@ -15,8 +15,8 @@ SELECT p.post_id
      , COALESCE(c.comment_updated_at, c.comment_created_at) AS comment_date
 FROM community_post p
          JOIN user u ON u.user_id = p.user_id
-         JOIN comment c ON c.user_id = p.user_id
+         JOIN comment c ON c.post_id = p.post_id
 WHERE post_is_blinded = FALSE
-  AND c.post_id = 1
+  AND c.post_id = 2
 -- 해당 코멘트의 포스트 id가 1인 모든 댓글 출력
 ORDER BY comment_id ASC;
