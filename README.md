@@ -100,6 +100,115 @@ main
 
 ## 9. 테스트 케이스
 
+<details>
+  <summary>테스트 케이스</summary>
+ <img src = "">
+
+ <details>
+    <summary>스튜디오</summary>
+     
+   <details>
+    <summary>[TEST-038]스튜디오 정보 등록</summary>
+     <img src = "">
+       <img src = "https://github.com/user-attachments/assets/8de594d7-0204-4011-8b17-be2a706318e6">
+  </details>
+
+
+
+
+
+
+
+  
+  </details>
+
+    
+   <details>
+    <summary>운동 제품</summary>
+    
+   <details>
+    <summary>[TEST-050]운동 상품 등록</summary>
+  <img src = "https://github.com/user-attachments/assets/18c42dcb-d386-4301-886f-7e956e3f53d8">
+  </details>
+
+   <details>
+    <summary>[TEST-051]운동 상품 조회</summary>
+     <img src = "https://github.com/user-attachments/assets/88548dbe-fadf-49c2-9cae-c3713316260c">
+  </details>
+  
+   <details>
+    <summary>[TEST-052]운동 상품 수정</summary>
+  <img src = "https://github.com/user-attachments/assets/4db67702-4502-4dde-8aab-52233c04a78e">
+  </details>
+
+  <details>
+    <summary>[TEST-053]운동 상품 삭제</summary>
+  <img src = "https://github.com/user-attachments/assets/0824c78f-1f33-4741-b908-b05c6ef49f26">
+  </details>
+
+  <details>
+    <summary>[TEST-054]운동 상품 키워드 검색 조회</summary>
+   <img src = "https://github.com/user-attachments/assets/cec77eb6-b67a-4013-8818-768784fb74e0">
+  </details>
+
+  </details>
+ 
+   <details>
+    <summary>다이어리(캘린더)</summary>
+
+   <details>
+    <summary>[TEST-055]할 일 등록</summary>
+        <img src = "https://github.com/user-attachments/assets/54f77b94-337b-4709-b3fb-4c7b6c5b3f9a">
+  </details>
+
+   <details>
+    <summary>[TEST-056]할 일 수정</summary>
+    <img src = "https://github.com/user-attachments/assets/f67d9f03-d19e-4cd2-a665-250033782bfa">
+  </details>
+
+   <details>
+    <summary>[TEST-057]할 일 삭제</summary>
+    <img src = "https://github.com/user-attachments/assets/bad1f6c6-ff9c-47d4-85ae-b8169b1a57b6">
+  </details>
+
+   <details>
+    <summary>[TEST-058]할 일 조회</summary>
+       - 하나에 대한 조회
+     <img src = "https://github.com/user-attachments/assets/220694cc-914e-443a-8f0c-fd0ab0ba3338">
+       - 전체에 대한 조회
+     <img src = "https://github.com/user-attachments/assets/92d8b171-1393-4d1e-94fd-86925752b3d1"> 
+  </details>
+
+  </details>
+
+   <details>
+    <summary>두 번째 토글</summary>
+    두 번째 토글 내용입니다.
+  </details>
+
+   <details>
+    <summary>두 번째 토글</summary>
+    두 번째 토글 내용입니다.
+  </details>
+
+   <details>
+    <summary>두 번째 토글</summary>
+    두 번째 토글 내용입니다.
+  </details>
+
+   <details>
+    <summary>두 번째 토글</summary>
+    두 번째 토글 내용입니다.
+  </details>
+
+   <details>
+    <summary>두 번째 토글</summary>
+    두 번째 토글 내용입니다.
+  </details>
+</details>
+
+
+
 ## 10. 프로젝트 후기
 
 ### 🍊 고성연
