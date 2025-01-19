@@ -1,5 +1,3 @@
-
-
 -- 특정 게시글 하나에 대한 조회시 게시글 과 댓글
 -- 대댓글을 조회하는 기능
 SELECT p.post_id
@@ -15,7 +13,7 @@ SELECT p.post_id
      , COALESCE(c.comment_updated_at, c.comment_created_at) AS comment_date
 FROM community_post p
          JOIN user u ON u.user_id = p.user_id
-         JOIN comment c ON c.user_id = p.user_id
+         JOIN comment c ON c.post_id = p.post_id
 WHERE post_is_blinded = FALSE
   AND c.post_id = 1
 -- 해당 코멘트의 포스트 id가 1인 모든 댓글 출력
