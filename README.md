@@ -1,6 +1,6 @@
 # 📖 운동하는 사람들을 위한 올인원(All-in-One) 플랫폼 Check! GymPT
 
-![readme_mockup2](https://user-images.githubusercontent.com/112460466/210706312-6a44b60d-a42e-4210-b334-9e5983f70fb3.png)
+<img width="1322" alt="Image" src="https://github.com/user-attachments/assets/000f594b-60cf-4343-868a-3dd0cc1c49ae" />
 
 - 배포 URL : https://ohmycode-readme.netlify.app
 - Test ID : readme@test.com
