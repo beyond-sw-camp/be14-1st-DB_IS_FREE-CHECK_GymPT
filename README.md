@@ -109,7 +109,6 @@ main
 
 <details>
   <summary>테스트 케이스</summary>
- <img src = "">
 
 <details>
     <summary>회원</summary>
@@ -252,10 +251,83 @@ main
        
 <details>
     <summary>[TEST-024]운동 장소 등록</summary>
-       <img src = "">
+       <img src = "https://github.com/user-attachments/assets/d1ac4c06-d593-4c76-b256-0b94b7c870e9">
   </details>
 
+<details>
+    <summary>[TEST-025]운동 장소 조회</summary>
+       <img src = "https://github.com/user-attachments/assets/c91d451b-1eec-4063-b81e-147bd134bb2e">
+  </details>
 
+<details>
+    <summary>[TEST-026]운동 장소 삭제</summary>
+       <img src = "https://github.com/user-attachments/assets/3a074e74-b898-49dd-8162-147edc00933a">
+  </details>
+
+<details>
+    <summary>[TEST-027]운동 장소 검색</summary>
+       <img src = "https://github.com/user-attachments/assets/87249134-ca57-423a-b447-4f6b27ef97d7">
+  </details>
+
+<details>
+    <summary>[TEST-028]운동 장소 수정</summary>
+       <img src = "(https://github.com/user-attachments/assets/a73b3f8b-1f63-45a5-a427-d007a25d7a23">
+  </details>
+
+  </details>
+
+<details>
+    <summary>운동 기록</summary>
+
+<details>
+    <summary>[TEST-029]전체 운동 기록 조회</summary>
+       <img src = "https://github.com/user-attachments/assets/8bfbb98b-f0fc-4a44-9399-7051429d2fbd">
+  </details>
+
+<details>
+    <summary>[TEST-030]운동별 운동 기록 조회</summary>
+       <img src = "https://github.com/user-attachments/assets/0aa10601-c64a-446c-a1ae-8044bca6cca3">
+  </details>
+
+<details>
+    <summary>[TEST-031]운동 기록 등록</summary>
+       <img src = "https://github.com/user-attachments/assets/2431e27e-279a-4ee4-a208-5b0fba7b5719">
+  </details>
+
+<details>
+    <summary>[TEST-032]운동 기록 삭제</summary>
+       <img src = "https://github.com/user-attachments/assets/58a8d032-f6ff-42a7-b174-ed00700141ff">
+  </details>
+
+  </details>
+
+<details>
+    <summary>운동 정보</summary>
+
+<details>
+    <summary>[TEST-033]운동 정보 조회</summary>
+       <img src = "https://github.com/user-attachments/assets/83d742e2-da51-482c-8a6b-2fa023132922">
+  </details>
+
+  <details>
+    <summary>[TEST-034]운동 정보 등록</summary>
+       <img src = "https://github.com/user-attachments/assets/fbd19de2-9082-4b59-aff5-df6a570f4372">
+  </details>
+
+  <details>
+    <summary>[TEST-035]운동 정보 삭제</summary>
+       <img src = "https://github.com/user-attachments/assets/57b0baf3-e071-4de6-9dfb-3295bf0cc1bf">
+  </details>
+
+  <details>
+    <summary>[TEST-036]운동 정보 수정</summary>
+       <img src = "https://github.com/user-attachments/assets/5352db1f-6b25-44aa-9e18-ea3812877046">
+  </details>
+
+  <details>
+    <summary>[TEST-037]운동 정보 검색</summary>
+       <img src = "https://github.com/user-attachments/assets/f76b3934-4e2a-438b-a10f-afeba4e86145">
+  </details>
 
   </details>
 
@@ -295,37 +367,42 @@ main
 
   <details>
     <summary>[TEST-043]스튜디오 리뷰 조회</summary>
-       <img src = "">
+       <img src = "https://github.com/user-attachments/assets/d433eff1-94c3-4a84-bf79-646a2372db67">
   </details>
 
 <details>
     <summary>[TEST-044]스튜디오 리뷰 검색</summary>
-       <img src = "">
+       <img src = "https://github.com/user-attachments/assets/e952a435-ded8-49ed-82ca-bf2df81d06e9">
   </details>
 
 <details>
 <summary>[TEST-045]스튜디오 리뷰 삭제</summary>
-<img src = "">
+<img src = "https://github.com/user-attachments/assets/4e59cf79-d238-44c2-a9e7-9dd63855e4e9">
   </details>
 
 <details>
     <summary>[TEST-046]스튜디오 예약 등록</summary>
-       <img src = "">
+       <img src = "https://github.com/user-attachments/assets/e2b4b2d2-40b9-49e7-b844-e977b4a12e7c">
   </details>
 
 <details>
     <summary>[TEST-047]스튜디오 예약 조회</summary>
-       <img src = "">
+       <img src = "https://github.com/user-attachments/assets/cad5ee35-3116-4720-865d-a18497df4bcd">
   </details>
 
 <details>
-    <summary>[TEST-048]스튜디오 예약 수정</summary>
-       <img src = "">
+    <summary>[TEST-048]스튜디오 예약 가능 여부</summary>
+       <img src = "https://github.com/user-attachments/assets/1ef314f4-1367-4b93-85b3-04356437261e">
   </details>
 
 <details>
-    <summary>[TEST-049]스튜디오 예약 삭제</summary>
-       <img src = "">
+    <summary>[TEST-049]스튜디오 예약 수정</summary>
+       <img src = "https://github.com/user-attachments/assets/7e373d3b-0738-4094-934b-192f77184533">
+  </details>
+
+<details>
+    <summary>[TEST-050]스튜디오 예약 삭제</summary>
+       <img src = "https://github.com/user-attachments/assets/b7f0557c-50e5-4e25-92ab-66dfe6f3538e">
   </details>
 
   </details>
@@ -334,27 +411,27 @@ main
     <summary>운동 제품</summary>
 
    <details>
-    <summary>[TEST-050]운동 상품 등록</summary>
+    <summary>[TEST-051]운동 상품 등록</summary>
   <img src = "https://github.com/user-attachments/assets/18c42dcb-d386-4301-886f-7e956e3f53d8">
   </details>
 
    <details>
-    <summary>[TEST-051]운동 상품 조회</summary>
+    <summary>[TEST-052]운동 상품 조회</summary>
      <img src = "https://github.com/user-attachments/assets/88548dbe-fadf-49c2-9cae-c3713316260c">
   </details>
 
    <details>
-    <summary>[TEST-052]운동 상품 수정</summary>
+    <summary>[TEST-053]운동 상품 수정</summary>
   <img src = "https://github.com/user-attachments/assets/4db67702-4502-4dde-8aab-52233c04a78e">
   </details>
 
   <details>
-    <summary>[TEST-053]운동 상품 삭제</summary>
+    <summary>[TEST-054]운동 상품 삭제</summary>
   <img src = "https://github.com/user-attachments/assets/0824c78f-1f33-4741-b908-b05c6ef49f26">
   </details>
 
   <details>
-    <summary>[TEST-054]운동 상품 키워드 검색 조회</summary>
+    <summary>[TEST-055]운동 상품 키워드 검색 조회</summary>
    <img src = "https://github.com/user-attachments/assets/cec77eb6-b67a-4013-8818-768784fb74e0">
   </details>
 
@@ -364,22 +441,22 @@ main
     <summary>다이어리(캘린더)</summary>
 
    <details>
-    <summary>[TEST-055]할 일 등록</summary>
+    <summary>[TEST-056]할 일 등록</summary>
         <img src = "https://github.com/user-attachments/assets/54f77b94-337b-4709-b3fb-4c7b6c5b3f9a">
   </details>
 
    <details>
-    <summary>[TEST-056]할 일 수정</summary>
+    <summary>[TEST-057]할 일 수정</summary>
     <img src = "https://github.com/user-attachments/assets/f67d9f03-d19e-4cd2-a665-250033782bfa">
   </details>
 
    <details>
-    <summary>[TEST-057]할 일 삭제</summary>
+    <summary>[TEST-058]할 일 삭제</summary>
     <img src = "https://github.com/user-attachments/assets/bad1f6c6-ff9c-47d4-85ae-b8169b1a57b6">
   </details>
 
    <details>
-    <summary>[TEST-058]할 일 조회</summary>
+    <summary>[TEST-059]할 일 조회</summary>
        - 하나에 대한 조회
      <img src = "https://github.com/user-attachments/assets/220694cc-914e-443a-8f0c-fd0ab0ba3338">
        - 전체에 대한 조회
@@ -390,28 +467,34 @@ main
 
    <details>
     <summary>두 번째 토글</summary>
-    두 번째 토글 내용입니다.
+
+<details>
+    <summary>[TEST-060]신고하기</summary>
+    <img src = "https://github.com/user-attachments/assets/d5894bbd-fffb-4ce2-8583-50fd3f57806a">
   </details>
 
-   <details>
-    <summary>두 번째 토글</summary>
-    두 번째 토글 내용입니다. test
+<details>
+    <summary>[TEST-061]신고 처리 여부</summary>
+    <img src = "https://github.com/user-attachments/assets/a1b95b83-bf36-4f90-a69c-03004144ba70">
   </details>
 
-   <details>
-    <summary>두 번째 토글</summary>
-    두 번째 토글 내용입니다.
+<details>
+    <summary>[TEST-062]신고에 따른 삭제</summary>
+    <img src = "https://github.com/user-attachments/assets/95c88e18-5b50-4242-8e9b-401054fc989">
   </details>
 
-   <details>
-    <summary>두 번째 토글</summary>
-    두 번째 토글 내용입니다.
+<details>
+    <summary>[TEST-063]블라인드 여부</summary>
+    <img src = "https://github.com/user-attachments/assets/cf40dcd4-8970-40b7-8d2c-6af1030d8bc7">
   </details>
 
-   <details>
-    <summary>두 번째 토글</summary>
-    두 번째 토글 내용입니다.
+<details>
+    <summary>[TEST-064]블랙리스트 레벨</summary>
+    <img src = "https://github.com/user-attachments/assets/be8352c9-b935-4a7e-9d30-7d397fb972eb">
   </details>
+
+  </details>
+
 </details>
 
 ## 10. 프로젝트 후기
