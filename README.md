@@ -479,7 +479,7 @@ main
   </details>
 
    <details>
-    <summary>두 번째 토글</summary>
+    <summary>신고 / 블랙리스트</summary>
 
 <details>
     <summary>[TEST-060]신고하기</summary>
@@ -503,7 +503,7 @@ main
 
 <details>
     <summary>[TEST-064]블랙리스트 레벨</summary>
-    <img src = "https://github.com/user-attachments/assets/be8352c9-b935-4a7e-9d30-7d397fb972eb">
+    <img src = "https://github.com/user-attachments/assets/dfef7ae4-3cdb-4226-add0-8c35abe9feef">
   </details>
 
   </details>
