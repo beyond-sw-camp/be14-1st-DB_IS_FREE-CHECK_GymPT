@@ -8,7 +8,6 @@ DROP PROCEDURE IF EXISTS level_control;
 DELIMITER //
 
 CREATE PROCEDURE IF NOT EXISTS level_control()
-body:
 BEGIN
     DECLARE ui INT(11);
     DECLARE counting INT(11);
@@ -27,8 +26,6 @@ BEGIN
     FROM report
     WHERE report_YN = TRUE
       AND reported_id = ui;
-
-    IF ui IN (SELECT user_id FROM blacklist) THEN LEAVE body; END IF;
 
     CASE
         WHEN counting = 3 THEN INSERT INTO blacklist (user_id, start_date, end_date, report_num, level)
