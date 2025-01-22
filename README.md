@@ -115,9 +115,9 @@ main
 
 ## 7. 테스트 케이스/명세서
  <img src = "https://github.com/user-attachments/assets/ded1a512-706b-4e04-b5e6-05c3d35d95ed">
- <img src = "https://github.com/user-attachments/assets/1229a139-0b26-4a6f-8872-ece47c26e433">
+ <img src = "https://github.com/user-attachments/assets/f1aa691b-2fd7-492a-8c50-574cc5275465">
  <img src = "https://github.com/user-attachments/assets/9d55a890-bb85-4a7a-a292-2214965cf861">
-   
+ <img src = "https://github.com/user-attachments/assets/7a3b4092-63bf-42d3-9e92-028b3d45438b">
 <details>
   <summary>테스트 케이스</summary>
 
