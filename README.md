@@ -83,7 +83,7 @@ main
 ## 4. 요구사항 명세서
 
 <img src = "https://github.com/user-attachments/assets/edb10cc5-f7c4-462c-a4f2-26dc4d455c84">
-<img src = "https://github.com/user-attachments/assets/8e232b7a-f879-4f81-8eda-7a4b5e2a418e">
+<img src = "https://github.com/user-attachments/assets/8f16fd1c-8d1b-4ff0-8821-d088afe545e7">
 <img src = "https://github.com/user-attachments/assets/4f7abaff-3b25-4708-90cd-05e443671ea3">
 <img src = "https://github.com/user-attachments/assets/e21d78b2-676e-4666-a679-db3c1b2e3286">
 
@@ -114,9 +114,9 @@ main
 <br>
 
 ## 7. 테스트 케이스/명세서
- <img src = "https://github.com/user-attachments/assets/ded1a512-706b-4e04-b5e6-05c3d35d95ed">
- <img src = "https://github.com/user-attachments/assets/f1aa691b-2fd7-492a-8c50-574cc5275465">
- <img src = "https://github.com/user-attachments/assets/9d55a890-bb85-4a7a-a292-2214965cf861">
+ <img src = "https://github.com/user-attachments/assets/f2483ff2-a43e-4060-a058-6885b4c86484">
+ <img src = "https://github.com/user-attachments/assets/03920f16-168c-40d7-bf55-dd25a903d5f1">
+ <img src = "https://github.com/user-attachments/assets/36f7542b-7fc6-46ea-abcd-2a98b538f227">
  <img src = "https://github.com/user-attachments/assets/7a3b4092-63bf-42d3-9e92-028b3d45438b">
 <details>
   <summary>테스트 케이스</summary>
